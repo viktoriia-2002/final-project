@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Disney</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logo.png" width="100px" height="50px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-primary" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" aria-current="page" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" aria-current="page" href="#">MOVIES</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container-fluid first-container">
+    <div class="movie-desq">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title animate__animated animate__zoomIn animate__repeat-3 animate__delay-1s">The Mandalorian
+          </h5>
+          <p class="card-text">Genre:
+            Action, Adventure, Science Fiction</p>
+          <p class="card-text"><small
+              class="text-muted animate__animated animate__flash animate__delay-1s animate__repeat-3">The Mandalorian
+              season 3 release date is February 2023</small>
+          </p>
+        </div>
+        <img src="/img/movie-photo.jpeg" width="650px" class="card-img-bottom" alt="">
+      </div>
+    </div>
+    <div class="video-form d-flex justify-content-md-between align-items-center">
+      <video class="video-trailer" controls>
+        <source src="/trailer.mp4" type="video/mp4">
+      </video>
+      <form>
+        <h5 class="subscribe-h5">Subscribe to be first to receive a notification about movie release! </h5>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <div class="container-fluid-footer d-flex align-items-center">
+      <!-- carousel -->
+
+      <div class="footer-lists d-flex align-items-center">
+        <div class="carousel w-50">
+          <h2 class="trending-title animate__animated animate__zoomIn animate__repeat-3 animate__delay-1s">Trending on
+            Disney</h2>
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner d-flex">
+              <div class="carousel-item active">
+                <img src="/img/m-1.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>High School Musical: The Musical: The Seties</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/m-2.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Light & Magic</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/img/m-3.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lightyear</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="lists">
+          <div class="ordered-list">
+            <span>Subscribe today and watch your favourite movies!</span>
+            <ol>
+              <li>In your web browser, go to www.disneyplus.com</li>
+              <li>Select SIGN UP NOW </li>
+              <li>Enter your email address</li>
+              <li>Enter a password</li>
+              <li>Choose your subscription type </li>
+              <li>Select START WATCHING</li>
+            </ol>
+          </div>
+          <div class="unordered-list">
+            <span>Third-party subscription partners:</span>
+            <ul>
+              <li>Rogers</li>
+              <li>Apple</li>
+              <li>Google</li>
+              <li>Amazon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="js-code-element">
+      <h2 class="js-title d-flex justify-content-md-center">Frequently Asked Questions</h2>
+      <p id="myPara"> What is Disney+ ? <br> Disney+ gives you something for every mood, all in one place. With
+        entertainment from Disney, Pixar, Marvel, Star Wars™, National Geographic and Star, there's always something
+        exciting to watch. Watch the latest releases, Original series and movies, classic films, throwbacks and so much
+        more. .</p>
+      <div class="button-js d-flex justify-content-md-center">
+        <button type="button-footer" onclick="changeText()">Click Next!</button>
+      </div>
+
+      <script>
+        function changeText() {
+          var element = document.getElementById("myPara");
+          element.innerHTML = "How much Disney+ Cost? <br> Access exciting and new content from Disney+ for $11.99 per month or $119.99 annually.";
+        }
+      </script>
+
+  </footer>
+
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Paragraph changed.";
+    }
+  </script>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
