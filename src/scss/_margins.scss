@@ -1,0 +1,3 @@
+// @each $spacers, $value in $spacers {
+//     @include margins-variants(".spacers#{$spacers}", $value);
+// }

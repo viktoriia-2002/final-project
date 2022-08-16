@@ -1,0 +1,43 @@
+// %btn-default {
+//   display: inline-block;
+//   cursor: pointer;
+//   padding: 10px 20px;
+
+//   &:hover {
+//     background-color: orange;
+//   }
+// }
+
+// .btn {
+//   // @extend %btn-default;
+//   @include variant();
+// }
+
+// .link-btn {
+//   @extend %btn-default;
+//   text-transform: uppercase;
+// }
+
+///// mixin
+// %btn-mixin {
+//   display: inline-block;
+//   cursor: none;
+//   padding: 20px 30px;
+
+//   &:hover {
+//     background-color: aqua;
+//   }
+// }
+
+// .btn-mixin {
+//   color: aqua;
+//   @extend %btn-mixin;
+// }
+
+
+// .btn-func {
+//   @include variant(orange, _, _, black);
+// }
+
+
+// С помощью mixin, цикла each и map типа данных сгенерировать классы с отступами. На выходе мы должны получить классы .mt-1, .mb-1, .ml-1, .mr-1, .mx-auto, .my-auto. Значения по отступам должны быть от 1 rem до 10rem, для классов выравнивания по горизонтали и вертикали .mx-auto и .my-auto давать значения margin auto.
